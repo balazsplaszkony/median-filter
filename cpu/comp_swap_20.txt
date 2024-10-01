@@ -1,0 +1,411 @@
+COMP_SWAP(common_pixels[0][0], common_pixels[0][1]);
+COMP_SWAP(common_pixels[1][0], common_pixels[1][1]);
+COMP_SWAP(common_pixels[2][0], common_pixels[2][1]);
+ 
+COMP_SWAP(common_pixels[0][2], common_pixels[0][3]);
+COMP_SWAP(common_pixels[1][2], common_pixels[1][3]);
+COMP_SWAP(common_pixels[2][2], common_pixels[2][3]);
+ 
+COMP_SWAP(common_pixels[0][4], common_pixels[0][5]);
+COMP_SWAP(common_pixels[1][4], common_pixels[1][5]);
+COMP_SWAP(common_pixels[2][4], common_pixels[2][5]);
+ 
+COMP_SWAP(common_pixels[0][6], common_pixels[0][7]);
+COMP_SWAP(common_pixels[1][6], common_pixels[1][7]);
+COMP_SWAP(common_pixels[2][6], common_pixels[2][7]);
+ 
+COMP_SWAP(common_pixels[0][8], common_pixels[0][9]);
+COMP_SWAP(common_pixels[1][8], common_pixels[1][9]);
+COMP_SWAP(common_pixels[2][8], common_pixels[2][9]);
+ 
+COMP_SWAP(common_pixels[0][10], common_pixels[0][11]);
+COMP_SWAP(common_pixels[1][10], common_pixels[1][11]);
+COMP_SWAP(common_pixels[2][10], common_pixels[2][11]);
+ 
+COMP_SWAP(common_pixels[0][12], common_pixels[0][13]);
+COMP_SWAP(common_pixels[1][12], common_pixels[1][13]);
+COMP_SWAP(common_pixels[2][12], common_pixels[2][13]);
+ 
+COMP_SWAP(common_pixels[0][14], common_pixels[0][15]);
+COMP_SWAP(common_pixels[1][14], common_pixels[1][15]);
+COMP_SWAP(common_pixels[2][14], common_pixels[2][15]);
+ 
+COMP_SWAP(common_pixels[0][16], common_pixels[0][17]);
+COMP_SWAP(common_pixels[1][16], common_pixels[1][17]);
+COMP_SWAP(common_pixels[2][16], common_pixels[2][17]);
+ 
+COMP_SWAP(common_pixels[0][18], common_pixels[0][19]);
+COMP_SWAP(common_pixels[1][18], common_pixels[1][19]);
+COMP_SWAP(common_pixels[2][18], common_pixels[2][19]);
+ 
+COMP_SWAP(common_pixels[0][0], common_pixels[0][2]);
+COMP_SWAP(common_pixels[1][0], common_pixels[1][2]);
+COMP_SWAP(common_pixels[2][0], common_pixels[2][2]);
+ 
+COMP_SWAP(common_pixels[0][1], common_pixels[0][3]);
+COMP_SWAP(common_pixels[1][1], common_pixels[1][3]);
+COMP_SWAP(common_pixels[2][1], common_pixels[2][3]);
+ 
+COMP_SWAP(common_pixels[0][4], common_pixels[0][6]);
+COMP_SWAP(common_pixels[1][4], common_pixels[1][6]);
+COMP_SWAP(common_pixels[2][4], common_pixels[2][6]);
+ 
+COMP_SWAP(common_pixels[0][5], common_pixels[0][7]);
+COMP_SWAP(common_pixels[1][5], common_pixels[1][7]);
+COMP_SWAP(common_pixels[2][5], common_pixels[2][7]);
+ 
+COMP_SWAP(common_pixels[0][8], common_pixels[0][10]);
+COMP_SWAP(common_pixels[1][8], common_pixels[1][10]);
+COMP_SWAP(common_pixels[2][8], common_pixels[2][10]);
+ 
+COMP_SWAP(common_pixels[0][9], common_pixels[0][11]);
+COMP_SWAP(common_pixels[1][9], common_pixels[1][11]);
+COMP_SWAP(common_pixels[2][9], common_pixels[2][11]);
+ 
+COMP_SWAP(common_pixels[0][12], common_pixels[0][14]);
+COMP_SWAP(common_pixels[1][12], common_pixels[1][14]);
+COMP_SWAP(common_pixels[2][12], common_pixels[2][14]);
+ 
+COMP_SWAP(common_pixels[0][13], common_pixels[0][15]);
+COMP_SWAP(common_pixels[1][13], common_pixels[1][15]);
+COMP_SWAP(common_pixels[2][13], common_pixels[2][15]);
+ 
+COMP_SWAP(common_pixels[0][16], common_pixels[0][18]);
+COMP_SWAP(common_pixels[1][16], common_pixels[1][18]);
+COMP_SWAP(common_pixels[2][16], common_pixels[2][18]);
+ 
+COMP_SWAP(common_pixels[0][17], common_pixels[0][19]);
+COMP_SWAP(common_pixels[1][17], common_pixels[1][19]);
+COMP_SWAP(common_pixels[2][17], common_pixels[2][19]);
+ 
+COMP_SWAP(common_pixels[0][1], common_pixels[0][2]);
+COMP_SWAP(common_pixels[1][1], common_pixels[1][2]);
+COMP_SWAP(common_pixels[2][1], common_pixels[2][2]);
+ 
+COMP_SWAP(common_pixels[0][5], common_pixels[0][6]);
+COMP_SWAP(common_pixels[1][5], common_pixels[1][6]);
+COMP_SWAP(common_pixels[2][5], common_pixels[2][6]);
+ 
+COMP_SWAP(common_pixels[0][9], common_pixels[0][10]);
+COMP_SWAP(common_pixels[1][9], common_pixels[1][10]);
+COMP_SWAP(common_pixels[2][9], common_pixels[2][10]);
+ 
+COMP_SWAP(common_pixels[0][13], common_pixels[0][14]);
+COMP_SWAP(common_pixels[1][13], common_pixels[1][14]);
+COMP_SWAP(common_pixels[2][13], common_pixels[2][14]);
+ 
+COMP_SWAP(common_pixels[0][17], common_pixels[0][18]);
+COMP_SWAP(common_pixels[1][17], common_pixels[1][18]);
+COMP_SWAP(common_pixels[2][17], common_pixels[2][18]);
+ 
+COMP_SWAP(common_pixels[0][0], common_pixels[0][4]);
+COMP_SWAP(common_pixels[1][0], common_pixels[1][4]);
+COMP_SWAP(common_pixels[2][0], common_pixels[2][4]);
+ 
+COMP_SWAP(common_pixels[0][1], common_pixels[0][5]);
+COMP_SWAP(common_pixels[1][1], common_pixels[1][5]);
+COMP_SWAP(common_pixels[2][1], common_pixels[2][5]);
+ 
+COMP_SWAP(common_pixels[0][2], common_pixels[0][6]);
+COMP_SWAP(common_pixels[1][2], common_pixels[1][6]);
+COMP_SWAP(common_pixels[2][2], common_pixels[2][6]);
+ 
+COMP_SWAP(common_pixels[0][3], common_pixels[0][7]);
+COMP_SWAP(common_pixels[1][3], common_pixels[1][7]);
+COMP_SWAP(common_pixels[2][3], common_pixels[2][7]);
+ 
+COMP_SWAP(common_pixels[0][8], common_pixels[0][12]);
+COMP_SWAP(common_pixels[1][8], common_pixels[1][12]);
+COMP_SWAP(common_pixels[2][8], common_pixels[2][12]);
+ 
+COMP_SWAP(common_pixels[0][9], common_pixels[0][13]);
+COMP_SWAP(common_pixels[1][9], common_pixels[1][13]);
+COMP_SWAP(common_pixels[2][9], common_pixels[2][13]);
+ 
+COMP_SWAP(common_pixels[0][10], common_pixels[0][14]);
+COMP_SWAP(common_pixels[1][10], common_pixels[1][14]);
+COMP_SWAP(common_pixels[2][10], common_pixels[2][14]);
+ 
+COMP_SWAP(common_pixels[0][11], common_pixels[0][15]);
+COMP_SWAP(common_pixels[1][11], common_pixels[1][15]);
+COMP_SWAP(common_pixels[2][11], common_pixels[2][15]);
+ 
+COMP_SWAP(common_pixels[0][2], common_pixels[0][4]);
+COMP_SWAP(common_pixels[1][2], common_pixels[1][4]);
+COMP_SWAP(common_pixels[2][2], common_pixels[2][4]);
+ 
+COMP_SWAP(common_pixels[0][3], common_pixels[0][5]);
+COMP_SWAP(common_pixels[1][3], common_pixels[1][5]);
+COMP_SWAP(common_pixels[2][3], common_pixels[2][5]);
+ 
+COMP_SWAP(common_pixels[0][10], common_pixels[0][12]);
+COMP_SWAP(common_pixels[1][10], common_pixels[1][12]);
+COMP_SWAP(common_pixels[2][10], common_pixels[2][12]);
+ 
+COMP_SWAP(common_pixels[0][11], common_pixels[0][13]);
+COMP_SWAP(common_pixels[1][11], common_pixels[1][13]);
+COMP_SWAP(common_pixels[2][11], common_pixels[2][13]);
+ 
+COMP_SWAP(common_pixels[0][1], common_pixels[0][2]);
+COMP_SWAP(common_pixels[1][1], common_pixels[1][2]);
+COMP_SWAP(common_pixels[2][1], common_pixels[2][2]);
+ 
+COMP_SWAP(common_pixels[0][3], common_pixels[0][4]);
+COMP_SWAP(common_pixels[1][3], common_pixels[1][4]);
+COMP_SWAP(common_pixels[2][3], common_pixels[2][4]);
+ 
+COMP_SWAP(common_pixels[0][5], common_pixels[0][6]);
+COMP_SWAP(common_pixels[1][5], common_pixels[1][6]);
+COMP_SWAP(common_pixels[2][5], common_pixels[2][6]);
+ 
+COMP_SWAP(common_pixels[0][9], common_pixels[0][10]);
+COMP_SWAP(common_pixels[1][9], common_pixels[1][10]);
+COMP_SWAP(common_pixels[2][9], common_pixels[2][10]);
+ 
+COMP_SWAP(common_pixels[0][11], common_pixels[0][12]);
+COMP_SWAP(common_pixels[1][11], common_pixels[1][12]);
+COMP_SWAP(common_pixels[2][11], common_pixels[2][12]);
+ 
+COMP_SWAP(common_pixels[0][13], common_pixels[0][14]);
+COMP_SWAP(common_pixels[1][13], common_pixels[1][14]);
+COMP_SWAP(common_pixels[2][13], common_pixels[2][14]);
+ 
+COMP_SWAP(common_pixels[0][17], common_pixels[0][18]);
+COMP_SWAP(common_pixels[1][17], common_pixels[1][18]);
+COMP_SWAP(common_pixels[2][17], common_pixels[2][18]);
+ 
+COMP_SWAP(common_pixels[0][0], common_pixels[0][8]);
+COMP_SWAP(common_pixels[1][0], common_pixels[1][8]);
+COMP_SWAP(common_pixels[2][0], common_pixels[2][8]);
+ 
+COMP_SWAP(common_pixels[0][1], common_pixels[0][9]);
+COMP_SWAP(common_pixels[1][1], common_pixels[1][9]);
+COMP_SWAP(common_pixels[2][1], common_pixels[2][9]);
+ 
+COMP_SWAP(common_pixels[0][2], common_pixels[0][10]);
+COMP_SWAP(common_pixels[1][2], common_pixels[1][10]);
+COMP_SWAP(common_pixels[2][2], common_pixels[2][10]);
+ 
+COMP_SWAP(common_pixels[0][3], common_pixels[0][11]);
+COMP_SWAP(common_pixels[1][3], common_pixels[1][11]);
+COMP_SWAP(common_pixels[2][3], common_pixels[2][11]);
+ 
+COMP_SWAP(common_pixels[0][4], common_pixels[0][12]);
+COMP_SWAP(common_pixels[1][4], common_pixels[1][12]);
+COMP_SWAP(common_pixels[2][4], common_pixels[2][12]);
+ 
+COMP_SWAP(common_pixels[0][5], common_pixels[0][13]);
+COMP_SWAP(common_pixels[1][5], common_pixels[1][13]);
+COMP_SWAP(common_pixels[2][5], common_pixels[2][13]);
+ 
+COMP_SWAP(common_pixels[0][6], common_pixels[0][14]);
+COMP_SWAP(common_pixels[1][6], common_pixels[1][14]);
+COMP_SWAP(common_pixels[2][6], common_pixels[2][14]);
+ 
+COMP_SWAP(common_pixels[0][7], common_pixels[0][15]);
+COMP_SWAP(common_pixels[1][7], common_pixels[1][15]);
+COMP_SWAP(common_pixels[2][7], common_pixels[2][15]);
+ 
+COMP_SWAP(common_pixels[0][4], common_pixels[0][8]);
+COMP_SWAP(common_pixels[1][4], common_pixels[1][8]);
+COMP_SWAP(common_pixels[2][4], common_pixels[2][8]);
+ 
+COMP_SWAP(common_pixels[0][5], common_pixels[0][9]);
+COMP_SWAP(common_pixels[1][5], common_pixels[1][9]);
+COMP_SWAP(common_pixels[2][5], common_pixels[2][9]);
+ 
+COMP_SWAP(common_pixels[0][6], common_pixels[0][10]);
+COMP_SWAP(common_pixels[1][6], common_pixels[1][10]);
+COMP_SWAP(common_pixels[2][6], common_pixels[2][10]);
+ 
+COMP_SWAP(common_pixels[0][7], common_pixels[0][11]);
+COMP_SWAP(common_pixels[1][7], common_pixels[1][11]);
+COMP_SWAP(common_pixels[2][7], common_pixels[2][11]);
+ 
+COMP_SWAP(common_pixels[0][2], common_pixels[0][4]);
+COMP_SWAP(common_pixels[1][2], common_pixels[1][4]);
+COMP_SWAP(common_pixels[2][2], common_pixels[2][4]);
+ 
+COMP_SWAP(common_pixels[0][3], common_pixels[0][5]);
+COMP_SWAP(common_pixels[1][3], common_pixels[1][5]);
+COMP_SWAP(common_pixels[2][3], common_pixels[2][5]);
+ 
+COMP_SWAP(common_pixels[0][6], common_pixels[0][8]);
+COMP_SWAP(common_pixels[1][6], common_pixels[1][8]);
+COMP_SWAP(common_pixels[2][6], common_pixels[2][8]);
+ 
+COMP_SWAP(common_pixels[0][7], common_pixels[0][9]);
+COMP_SWAP(common_pixels[1][7], common_pixels[1][9]);
+COMP_SWAP(common_pixels[2][7], common_pixels[2][9]);
+ 
+COMP_SWAP(common_pixels[0][10], common_pixels[0][12]);
+COMP_SWAP(common_pixels[1][10], common_pixels[1][12]);
+COMP_SWAP(common_pixels[2][10], common_pixels[2][12]);
+ 
+COMP_SWAP(common_pixels[0][11], common_pixels[0][13]);
+COMP_SWAP(common_pixels[1][11], common_pixels[1][13]);
+COMP_SWAP(common_pixels[2][11], common_pixels[2][13]);
+ 
+COMP_SWAP(common_pixels[0][1], common_pixels[0][2]);
+COMP_SWAP(common_pixels[1][1], common_pixels[1][2]);
+COMP_SWAP(common_pixels[2][1], common_pixels[2][2]);
+ 
+COMP_SWAP(common_pixels[0][3], common_pixels[0][4]);
+COMP_SWAP(common_pixels[1][3], common_pixels[1][4]);
+COMP_SWAP(common_pixels[2][3], common_pixels[2][4]);
+ 
+COMP_SWAP(common_pixels[0][5], common_pixels[0][6]);
+COMP_SWAP(common_pixels[1][5], common_pixels[1][6]);
+COMP_SWAP(common_pixels[2][5], common_pixels[2][6]);
+ 
+COMP_SWAP(common_pixels[0][7], common_pixels[0][8]);
+COMP_SWAP(common_pixels[1][7], common_pixels[1][8]);
+COMP_SWAP(common_pixels[2][7], common_pixels[2][8]);
+ 
+COMP_SWAP(common_pixels[0][9], common_pixels[0][10]);
+COMP_SWAP(common_pixels[1][9], common_pixels[1][10]);
+COMP_SWAP(common_pixels[2][9], common_pixels[2][10]);
+ 
+COMP_SWAP(common_pixels[0][11], common_pixels[0][12]);
+COMP_SWAP(common_pixels[1][11], common_pixels[1][12]);
+COMP_SWAP(common_pixels[2][11], common_pixels[2][12]);
+ 
+COMP_SWAP(common_pixels[0][13], common_pixels[0][14]);
+COMP_SWAP(common_pixels[1][13], common_pixels[1][14]);
+COMP_SWAP(common_pixels[2][13], common_pixels[2][14]);
+ 
+COMP_SWAP(common_pixels[0][17], common_pixels[0][18]);
+COMP_SWAP(common_pixels[1][17], common_pixels[1][18]);
+COMP_SWAP(common_pixels[2][17], common_pixels[2][18]);
+ 
+COMP_SWAP(common_pixels[0][0], common_pixels[0][16]);
+COMP_SWAP(common_pixels[1][0], common_pixels[1][16]);
+COMP_SWAP(common_pixels[2][0], common_pixels[2][16]);
+ 
+COMP_SWAP(common_pixels[0][1], common_pixels[0][17]);
+COMP_SWAP(common_pixels[1][1], common_pixels[1][17]);
+COMP_SWAP(common_pixels[2][1], common_pixels[2][17]);
+ 
+COMP_SWAP(common_pixels[0][2], common_pixels[0][18]);
+COMP_SWAP(common_pixels[1][2], common_pixels[1][18]);
+COMP_SWAP(common_pixels[2][2], common_pixels[2][18]);
+ 
+COMP_SWAP(common_pixels[0][3], common_pixels[0][19]);
+COMP_SWAP(common_pixels[1][3], common_pixels[1][19]);
+COMP_SWAP(common_pixels[2][3], common_pixels[2][19]);
+ 
+COMP_SWAP(common_pixels[0][8], common_pixels[0][16]);
+COMP_SWAP(common_pixels[1][8], common_pixels[1][16]);
+COMP_SWAP(common_pixels[2][8], common_pixels[2][16]);
+ 
+COMP_SWAP(common_pixels[0][9], common_pixels[0][17]);
+COMP_SWAP(common_pixels[1][9], common_pixels[1][17]);
+COMP_SWAP(common_pixels[2][9], common_pixels[2][17]);
+ 
+COMP_SWAP(common_pixels[0][10], common_pixels[0][18]);
+COMP_SWAP(common_pixels[1][10], common_pixels[1][18]);
+COMP_SWAP(common_pixels[2][10], common_pixels[2][18]);
+ 
+COMP_SWAP(common_pixels[0][11], common_pixels[0][19]);
+COMP_SWAP(common_pixels[1][11], common_pixels[1][19]);
+COMP_SWAP(common_pixels[2][11], common_pixels[2][19]);
+ 
+COMP_SWAP(common_pixels[0][4], common_pixels[0][8]);
+COMP_SWAP(common_pixels[1][4], common_pixels[1][8]);
+COMP_SWAP(common_pixels[2][4], common_pixels[2][8]);
+ 
+COMP_SWAP(common_pixels[0][5], common_pixels[0][9]);
+COMP_SWAP(common_pixels[1][5], common_pixels[1][9]);
+COMP_SWAP(common_pixels[2][5], common_pixels[2][9]);
+ 
+COMP_SWAP(common_pixels[0][6], common_pixels[0][10]);
+COMP_SWAP(common_pixels[1][6], common_pixels[1][10]);
+COMP_SWAP(common_pixels[2][6], common_pixels[2][10]);
+ 
+COMP_SWAP(common_pixels[0][7], common_pixels[0][11]);
+COMP_SWAP(common_pixels[1][7], common_pixels[1][11]);
+COMP_SWAP(common_pixels[2][7], common_pixels[2][11]);
+ 
+COMP_SWAP(common_pixels[0][12], common_pixels[0][16]);
+COMP_SWAP(common_pixels[1][12], common_pixels[1][16]);
+COMP_SWAP(common_pixels[2][12], common_pixels[2][16]);
+ 
+COMP_SWAP(common_pixels[0][13], common_pixels[0][17]);
+COMP_SWAP(common_pixels[1][13], common_pixels[1][17]);
+COMP_SWAP(common_pixels[2][13], common_pixels[2][17]);
+ 
+COMP_SWAP(common_pixels[0][14], common_pixels[0][18]);
+COMP_SWAP(common_pixels[1][14], common_pixels[1][18]);
+COMP_SWAP(common_pixels[2][14], common_pixels[2][18]);
+ 
+COMP_SWAP(common_pixels[0][15], common_pixels[0][19]);
+COMP_SWAP(common_pixels[1][15], common_pixels[1][19]);
+COMP_SWAP(common_pixels[2][15], common_pixels[2][19]);
+ 
+COMP_SWAP(common_pixels[0][2], common_pixels[0][4]);
+COMP_SWAP(common_pixels[1][2], common_pixels[1][4]);
+COMP_SWAP(common_pixels[2][2], common_pixels[2][4]);
+ 
+COMP_SWAP(common_pixels[0][3], common_pixels[0][5]);
+COMP_SWAP(common_pixels[1][3], common_pixels[1][5]);
+COMP_SWAP(common_pixels[2][3], common_pixels[2][5]);
+ 
+COMP_SWAP(common_pixels[0][6], common_pixels[0][8]);
+COMP_SWAP(common_pixels[1][6], common_pixels[1][8]);
+COMP_SWAP(common_pixels[2][6], common_pixels[2][8]);
+ 
+COMP_SWAP(common_pixels[0][7], common_pixels[0][9]);
+COMP_SWAP(common_pixels[1][7], common_pixels[1][9]);
+COMP_SWAP(common_pixels[2][7], common_pixels[2][9]);
+ 
+COMP_SWAP(common_pixels[0][10], common_pixels[0][12]);
+COMP_SWAP(common_pixels[1][10], common_pixels[1][12]);
+COMP_SWAP(common_pixels[2][10], common_pixels[2][12]);
+ 
+COMP_SWAP(common_pixels[0][11], common_pixels[0][13]);
+COMP_SWAP(common_pixels[1][11], common_pixels[1][13]);
+COMP_SWAP(common_pixels[2][11], common_pixels[2][13]);
+ 
+COMP_SWAP(common_pixels[0][14], common_pixels[0][16]);
+COMP_SWAP(common_pixels[1][14], common_pixels[1][16]);
+COMP_SWAP(common_pixels[2][14], common_pixels[2][16]);
+ 
+COMP_SWAP(common_pixels[0][15], common_pixels[0][17]);
+COMP_SWAP(common_pixels[1][15], common_pixels[1][17]);
+COMP_SWAP(common_pixels[2][15], common_pixels[2][17]);
+ 
+COMP_SWAP(common_pixels[0][1], common_pixels[0][2]);
+COMP_SWAP(common_pixels[1][1], common_pixels[1][2]);
+COMP_SWAP(common_pixels[2][1], common_pixels[2][2]);
+ 
+COMP_SWAP(common_pixels[0][3], common_pixels[0][4]);
+COMP_SWAP(common_pixels[1][3], common_pixels[1][4]);
+COMP_SWAP(common_pixels[2][3], common_pixels[2][4]);
+ 
+COMP_SWAP(common_pixels[0][5], common_pixels[0][6]);
+COMP_SWAP(common_pixels[1][5], common_pixels[1][6]);
+COMP_SWAP(common_pixels[2][5], common_pixels[2][6]);
+ 
+COMP_SWAP(common_pixels[0][7], common_pixels[0][8]);
+COMP_SWAP(common_pixels[1][7], common_pixels[1][8]);
+COMP_SWAP(common_pixels[2][7], common_pixels[2][8]);
+ 
+COMP_SWAP(common_pixels[0][9], common_pixels[0][10]);
+COMP_SWAP(common_pixels[1][9], common_pixels[1][10]);
+COMP_SWAP(common_pixels[2][9], common_pixels[2][10]);
+ 
+COMP_SWAP(common_pixels[0][11], common_pixels[0][12]);
+COMP_SWAP(common_pixels[1][11], common_pixels[1][12]);
+COMP_SWAP(common_pixels[2][11], common_pixels[2][12]);
+ 
+COMP_SWAP(common_pixels[0][13], common_pixels[0][14]);
+COMP_SWAP(common_pixels[1][13], common_pixels[1][14]);
+COMP_SWAP(common_pixels[2][13], common_pixels[2][14]);
+ 
+COMP_SWAP(common_pixels[0][15], common_pixels[0][16]);
+COMP_SWAP(common_pixels[1][15], common_pixels[1][16]);
+COMP_SWAP(common_pixels[2][15], common_pixels[2][16]);
+ 
+COMP_SWAP(common_pixels[0][17], common_pixels[0][18]);
+COMP_SWAP(common_pixels[1][17], common_pixels[1][18]);
+COMP_SWAP(common_pixels[2][17], common_pixels[2][18]);
