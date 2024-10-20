@@ -102,7 +102,7 @@ int compare_with_ref(const char* generated_file, const char* reference_file) {
 	    ilDeleteImages(1, &imgGen);
 	    ilDeleteImages(1, &imgRef);
 
-	    return 0;
+	    return ret;
 	}
 
 int main(int argc, char *argv[])
