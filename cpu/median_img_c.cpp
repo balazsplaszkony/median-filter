@@ -147,7 +147,13 @@ void median_img_scalar(int imgHeight, int imgWidth, int imgWidthF, uint8_t *imgS
 //						}
 //					}
 //				}
-
+//				if(col < 20 && row == 0)
+//				{
+//					printf("byte %d: value: %d\n", (col*3)/2 + 0, common_pixels[0][9]);
+//					printf("byte %d: value: %d\n", (col*3)/2 + 1, common_pixels[1][9]);
+//					printf("byte %d: value: %d\n", (col*3)/2 + 2, common_pixels[2][9]);
+//
+//				}
 				#include "comp_swap_20.txt"
 
 				// Copy middle elements of the sorted common pixel arrays, to a new array.
@@ -169,6 +175,8 @@ void median_img_scalar(int imgHeight, int imgWidth, int imgWidthF, uint8_t *imgS
                 possible_common_median_values[0][5] = common_pixels[0][7 + 5];
                 possible_common_median_values[1][5] = common_pixels[1][7 + 5];
                 possible_common_median_values[2][5] = common_pixels[2][7 + 5];
+
+
 
 
             	// Batcher's Odd-Even Mergesort for the 5 common pixels

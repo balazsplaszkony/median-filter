@@ -1,0 +1,133 @@
+/*
+#include <stdio.h>
+#include <stdbool.h>
+
+void COMP_SWAP_AVX (int* a, int* b)
+{
+    if (*a > *b)
+    {
+        int tmp = *a;
+        *a = *b;
+        *b = tmp;
+    }
+}
+    static bool compared_with_other_array[2][11];
+
+int main() {
+    int n = 11; // Total size after merging
+    int p;
+    int logp;
+    
+    for (p = 1, logp = 0; p < n; p <<= 1, logp++) 
+    {
+        for (int k = p; k >= 1; k >>= 1) 
+        {
+            for (int j = k % p; j <= (n - 1 - k); j += 2 * k)
+            {
+                for (int i = 0; i <= (k - 1 < n - j - k - 1 ? k - 1 : n - j - k - 1); i++) 
+                {
+                    if (((i + j) >> (logp + 1)) == ((i + j + k) >> (logp + 1))) 
+                    {
+                            if (((i + j) < 5 && (i + j + k) >= 5) || 
+                                compared_with_other_array[0][i + j] == true ||
+                                compared_with_other_array[0][i + j + k] == true)
+                                {
+                                    //COMP_SWAP_AVX(i + j, i + j + k);
+                                    printf("COMP_SWAP_AVX(median_merger[%d], median_merger[%d]);\n",  (i + j), (i + j + k));
+                                    compared_with_other_array[0][i + j] = true;
+                                    compared_with_other_array[0][i + j + k] = true;
+                                }
+                    }
+                }
+            }
+        }
+    }
+    
+    printf ("\n");
+    
+    for (p = 1, logp = 0; p < n; p <<= 1, logp++) 
+    {
+        for (int k = p; k >= 1; k >>= 1) 
+        {
+            for (int j = k % p; j <= (n - 1 - k); j += 2 * k)
+            {
+                for (int i = 0; i <= (k - 1 < n - j - k - 1 ? k - 1 : n - j - k - 1); i++) 
+                {
+                    if (((i + j) >> (logp + 1)) == ((i + j + k) >> (logp + 1))) 
+                    {
+                            if (((i + j) < 5 && (i + j + k) >= 5) || 
+                                compared_with_other_array[1][i + j] == true ||
+                                compared_with_other_array[1][i + j + k] == true)
+                                {
+                                    //COMP_SWAP_AVX(i + j, i + j + k);
+                                    printf("COMP_SWAP_AVX(median_merger[%d], median_merger[%d]);\n",  (11 + i + j), (11 + i + j + k));
+                                    compared_with_other_array[1][i + j] = true;
+                                    compared_with_other_array[1][i + j + k] = true;
+                                }
+                    }
+                }
+            }
+        }
+    }
+    return 0;
+}
+*/
+
+
+COMP_SWAP_AVX(median_merger[4], median_merger[5]);
+COMP_SWAP_AVX(median_merger[4], median_merger[6]);
+COMP_SWAP_AVX(median_merger[5], median_merger[7]);
+COMP_SWAP_AVX(median_merger[5], median_merger[6]);
+COMP_SWAP_AVX(median_merger[0], median_merger[4]);
+COMP_SWAP_AVX(median_merger[1], median_merger[5]);
+COMP_SWAP_AVX(median_merger[2], median_merger[6]);
+COMP_SWAP_AVX(median_merger[3], median_merger[7]);
+COMP_SWAP_AVX(median_merger[2], median_merger[4]);
+COMP_SWAP_AVX(median_merger[3], median_merger[5]);
+COMP_SWAP_AVX(median_merger[1], median_merger[2]);
+COMP_SWAP_AVX(median_merger[3], median_merger[4]);
+COMP_SWAP_AVX(median_merger[5], median_merger[6]);
+COMP_SWAP_AVX(median_merger[0], median_merger[8]);
+COMP_SWAP_AVX(median_merger[1], median_merger[9]);
+COMP_SWAP_AVX(median_merger[2], median_merger[10]);
+COMP_SWAP_AVX(median_merger[4], median_merger[8]);
+COMP_SWAP_AVX(median_merger[5], median_merger[9]);
+COMP_SWAP_AVX(median_merger[6], median_merger[10]);
+COMP_SWAP_AVX(median_merger[2], median_merger[4]);
+COMP_SWAP_AVX(median_merger[3], median_merger[5]);
+COMP_SWAP_AVX(median_merger[6], median_merger[8]);
+COMP_SWAP_AVX(median_merger[7], median_merger[9]);
+COMP_SWAP_AVX(median_merger[1], median_merger[2]);
+COMP_SWAP_AVX(median_merger[3], median_merger[4]);
+COMP_SWAP_AVX(median_merger[5], median_merger[6]);
+COMP_SWAP_AVX(median_merger[7], median_merger[8]);
+COMP_SWAP_AVX(median_merger[9], median_merger[10]);
+
+COMP_SWAP_AVX(median_merger[15], median_merger[16]);
+COMP_SWAP_AVX(median_merger[15], median_merger[17]);
+COMP_SWAP_AVX(median_merger[16], median_merger[18]);
+COMP_SWAP_AVX(median_merger[16], median_merger[17]);
+COMP_SWAP_AVX(median_merger[11], median_merger[15]);
+COMP_SWAP_AVX(median_merger[12], median_merger[16]);
+COMP_SWAP_AVX(median_merger[13], median_merger[17]);
+COMP_SWAP_AVX(median_merger[14], median_merger[18]);
+COMP_SWAP_AVX(median_merger[13], median_merger[15]);
+COMP_SWAP_AVX(median_merger[14], median_merger[16]);
+COMP_SWAP_AVX(median_merger[12], median_merger[13]);
+COMP_SWAP_AVX(median_merger[14], median_merger[15]);
+COMP_SWAP_AVX(median_merger[16], median_merger[17]);
+COMP_SWAP_AVX(median_merger[11], median_merger[19]);
+COMP_SWAP_AVX(median_merger[12], median_merger[20]);
+COMP_SWAP_AVX(median_merger[13], median_merger[21]);
+COMP_SWAP_AVX(median_merger[15], median_merger[19]);
+COMP_SWAP_AVX(median_merger[16], median_merger[20]);
+COMP_SWAP_AVX(median_merger[17], median_merger[21]);
+COMP_SWAP_AVX(median_merger[13], median_merger[15]);
+COMP_SWAP_AVX(median_merger[14], median_merger[16]);
+COMP_SWAP_AVX(median_merger[17], median_merger[19]);
+COMP_SWAP_AVX(median_merger[18], median_merger[20]);
+COMP_SWAP_AVX(median_merger[12], median_merger[13]);
+COMP_SWAP_AVX(median_merger[14], median_merger[15]);
+COMP_SWAP_AVX(median_merger[16], median_merger[17]);
+COMP_SWAP_AVX(median_merger[18], median_merger[19]);
+COMP_SWAP_AVX(median_merger[20], median_merger[21]);

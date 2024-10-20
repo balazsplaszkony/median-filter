@@ -34,6 +34,9 @@
 void median_img_avx(int imgHeight, int imgWidth, int imgWidthF,
 			   uint8_t *imgSrcExt, uint8_t *imgDst);
 
+void median_img_avx_optimized(int imgHeight, int imgWidth, int imgWidthF,
+			   uint8_t *imgSrcExt, uint8_t *imgDst);
+
 // Function to compare two images byte-by-byte
 int compare_with_ref(const char* generated_file, const char* reference_file) {
 	 ILuint imgGen, imgRef;
@@ -76,20 +79,25 @@ int compare_with_ref(const char* generated_file, const char* reference_file) {
 	         printf("Images have different formats (Generated: %d, Reference: %d).\n", formatGen, formatRef);
 	         return -1;
 	     }
-
+	     int ret = 0;
 	    int size = widthGen * heightGen * ilGetInteger(IL_IMAGE_BYTES_PER_PIXEL);  // Ensure correct byte size
 	    for (int i = 0; i < size; i++) {
 	        if (dataGen[i] != dataRef[i]) {
 	            printf("Images differ at byte %d (Generated: 0x%02x, Reference: 0x%02x).\n", i, dataGen[i], dataRef[i]);
-	            return -1;
+	            ret = -1; break;
 	        }
 	        if (i % 1000000 == 0)
 	        {
 	        	//printf("generated %d reference: %d).\n", dataGen[i], dataRef[i]);
 	        }
-	    }
+	        if (i < 200 || (i >= 4922*3 && i < 200 + 3*(4922)))
+	        {
+	            //printf("byte %d (Generated: 0x%02x, Reference: 0x%02x).\n", i, dataGen[i], dataRef[i]);
+	        }
 
-	    printf("Images are identical.\n");
+	    }
+	    if (ret == 0)
+	    	printf("Images are identical.\n");
 
 	    ilDeleteImages(1, &imgGen);
 	    ilDeleteImages(1, &imgRef);
@@ -193,30 +201,44 @@ int main(int argc, char *argv[])
 
 #if 1
 	ts_start = get_ts_ns();
-	for (int run=0; run<runs[0]; run++)
-	{
+
 	median_img_scalar(imgHeight,
 	          imgWidth,
 		      imgWidthF,
 			  imgSrcExt,
 			  imgRes[0]);
-	}
 		ts_end = get_ts_ns();
-		elapsed = (ts_end - ts_start)/double(runs[0]);
+		elapsed = (ts_end - ts_start);
 		perf = double(imgHeight*imgWidth)*1000.0/elapsed;
 
 	printf("CPU scalar time: %f ms, Mpixel/s: %f\n", (elapsed/1000000.0), perf);
 #endif
 
-#if 0
+#if 1
 	ts_start = get_ts_ns();
-	for (int run=0; run<runs[0]; run++) {
-		median_img_avx(imgHeight,
-				imgWidth,
-				imgWidthF,
-				imgSrcExt,
-				imgRes[1]);
+	if (imgHeight % 2 == 0 && (imgWidth * 3) % 32 == 0)
+	{
+		for (int run=0; run<runs[0]; run++)
+		{
+			median_img_avx_optimized(imgHeight,
+					imgWidth,
+					imgWidthF,
+					imgSrcExt,
+					imgRes[1]);
+		}
 	}
+	else
+	{
+		for (int run=0; run<runs[0]; run++)
+		{
+			median_img_avx(imgHeight,
+					imgWidth,
+					imgWidthF,
+					imgSrcExt,
+					imgRes[1]);
+		}
+	}
+
 	ts_end = get_ts_ns();
 	elapsed = (ts_end - ts_start)/double(runs[0]);
 
@@ -257,7 +279,7 @@ int main(int argc, char *argv[])
 	// Compare the generated output image with a reference image
 	const char* reference_file = "output_ref.bmp";  // Set the path of the reference image here
 	char generated_file[100];
-	sprintf(generated_file, "%s_0.%s", dst_fname, dst_ext);  // The generated output file for comparison
+	sprintf(generated_file, "%s_1.%s", dst_fname, dst_ext);  // The generated output file for comparison
 
 	// Call the comparison function
 	int result = compare_with_ref(generated_file, reference_file);
