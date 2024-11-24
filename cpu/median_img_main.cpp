@@ -41,68 +41,66 @@ void median_img_avx_optimized(int imgHeight, int imgWidth, int imgWidthF,
 int compare_with_ref(const char* generated_file, const char* reference_file) {
 	 ILuint imgGen, imgRef;
 
-	     // Load generated image
+
 	     ilGenImages(1, &imgGen);
 	     ilBindImage(imgGen);
-	     if (!ilLoadImage(generated_file)) {
+	     if (!ilLoadImage(generated_file)) 
+		 {
 	         printf("Error loading generated image: %s\n", generated_file);
 	         return -1;
 	     }
 
-	     // Get data from the generated image
+
 	     int widthGen = ilGetInteger(IL_IMAGE_WIDTH);
 	     int heightGen = ilGetInteger(IL_IMAGE_HEIGHT);
 	     int formatGen = ilGetInteger(IL_IMAGE_FORMAT);
-	     ILubyte* dataGen = ilGetData();  // Get data for generated image before switching
+	     ILubyte* dataGen = ilGetData();  
 
-	     // Load reference image
+
 	     ilGenImages(1, &imgRef);
-	     ilBindImage(imgRef);  // Switch to the reference image
-	     if (!ilLoadImage(reference_file)) {
+	     ilBindImage(imgRef);  
+	     if (!ilLoadImage(reference_file)) 
+		 {
 	         printf("Error loading reference image: %s\n", reference_file);
 	         return -1;
 	     }
 
-	     // Get data from the reference image
+
 	     int widthRef = ilGetInteger(IL_IMAGE_WIDTH);
 	     int heightRef = ilGetInteger(IL_IMAGE_HEIGHT);
 	     int formatRef = ilGetInteger(IL_IMAGE_FORMAT);
-	     ILubyte* dataRef = ilGetData();  // Get data for reference image
+	     ILubyte* dataRef = ilGetData(); 
 
-	     // Ensure both images have the same dimensions and format
-	     if (widthGen != widthRef || heightGen != heightRef) {
+
+	     if (widthGen != widthRef || heightGen != heightRef) 
+		 {
 	         printf("Images have different dimensions (Generated: %dx%d, Reference: %dx%d).\n", widthGen, heightGen, widthRef, heightRef);
 	         return -1;
 	     }
 
-	     if (formatGen != formatRef) {
+	     if (formatGen != formatRef) 
+		 {
 	         printf("Images have different formats (Generated: %d, Reference: %d).\n", formatGen, formatRef);
 	         return -1;
 	     }
-	     int ret = 0;
-	    int size = widthGen * heightGen * ilGetInteger(IL_IMAGE_BYTES_PER_PIXEL);  // Ensure correct byte size
-	    for (int i = 0; i < size; i++) {
-	        if (dataGen[i] != dataRef[i]) {
+		 
+	    int size = widthGen * heightGen * ilGetInteger(IL_IMAGE_BYTES_PER_PIXEL);  
+	    for (int i = 0; i < size; i++) 
+		{
+	        if (dataGen[i] != dataRef[i]) 
+			{
 	            printf("Images differ at byte %d (Generated: 0x%02x, Reference: 0x%02x).\n", i, dataGen[i], dataRef[i]);
-	            ret = -1; break;
-	        }
-	        if (i % 1000000 == 0)
-	        {
-	        	//printf("generated %d reference: %d).\n", dataGen[i], dataRef[i]);
-	        }
-	        if (i < 200 || (i >= 4922*3 && i < 200 + 3*(4922)))
-	        {
-	            //printf("byte %d (Generated: 0x%02x, Reference: 0x%02x).\n", i, dataGen[i], dataRef[i]);
+	            return -1;
 	        }
 
 	    }
-	    if (ret == 0)
-	    	printf("Images are identical.\n");
+		
+	    printf("Images are identical.\n");
 
 	    ilDeleteImages(1, &imgGen);
 	    ilDeleteImages(1, &imgRef);
 
-	    return ret;
+	    return 0;
 	}
 
 int main(int argc, char *argv[])
